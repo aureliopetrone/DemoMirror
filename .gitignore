@@ -64,3 +64,5 @@ fmod_editor.log
 # Custom
 Assets/Plugins/ClientOnly/
 Assets/Plugins/ClientOnly.meta
+
+* text eol=lf
