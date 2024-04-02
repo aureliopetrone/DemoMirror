@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{38568cba-cc8d-33dd-3d7a-3fad6296a179}</ProjectGuid>
+    <ProjectGuid>{7fa2920d-b087-67ca-e573-1c751c5b3ef4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Mirror.Hosting</AssemblyName>
@@ -37,130 +37,130 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\DeployPostData.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseUpdateBase.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseConfigResponse.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Location.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Monitor.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SessionContext.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\StopActiveDeploymentResult.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersions.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Enums\ApiEnvironment.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerManagedReleaseResponse.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\AppVersionUpdatePatchData.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Requests\CreateAppRequest.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Enums\ToolState.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Enums\ServerStatus.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\DeployModel.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\GeoIpListModel.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\BulkSessionPost.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\UpsertAppVersionResult.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SessionGet.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerListResponse.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\StaticSites.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentEnvsResponse.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\TotalMetricsModel.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionWhitelistResponse.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentUpdate.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Status.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\StaticSitesList.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\CustomSessionModel.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SessionDelete.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Deployment.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\DeployEnvModel.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseResponseBase.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseResponse.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionUpdate.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionUpdateSessionConfig.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\DeploymentSessionContext.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Locations.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerCreate.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseConfigUpdate.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SelectorModel.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\CreateDeploymentResult.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\StopActiveDeploymentResult.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Requests\CreateAppRequest.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\BulkSessionPost.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Delete.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\DeploymentPortsData.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionCreateSessionConfig.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppCreation.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SessionRequest.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Pagination.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapBuildUtils.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentEnvsCreate.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\AppPortsData.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SelectorEnvModel.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentListResponse.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Dependencies\HttpEncoder.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SessionUserContext.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerResponse.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionProbe.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\ApplicationPost.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\EdgegapErrorResult.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\EdgegapWizardApi.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Request.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapServerDataManager.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\EdgegapHttpResult.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\CustomSessionDeleteModel.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerManagedReleaseCreate.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\GetYourPublicIpResult.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerManagedReleaseUpdate.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\BulkSessionDelete.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\CustomBulkSessionModel.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\ApplicationPatch.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseUpdateBase.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Monitor.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\AppVersionUpdatePatchData.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\DeployModel.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Enums\ServerStatus.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Paginator.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\EdgegapAppApi.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\SessionData.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\PortMapping.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Application.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentEnvListResponse.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapWindowMetadata.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\LocationModel.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\PatchSessionModel.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\ApiModelContainerlogs.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\ApiModelContainercrashdata.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseConfigCreate.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionWhitelistEntrySuccess.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Dependencies\HttpUtility.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentResponse.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SessionModel.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapToolScript.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\BaseModel.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\EdgegapDeploymentsApi.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\ComponentCredentials.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\GetCreateAppResult.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Requests\UpdateAppVersionRequest.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\ButtonShaker.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseConfigResponse.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SessionContext.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersions.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Enums\ToolState.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\UpsertAppVersionResult.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MetricsModel.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseUpdate.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\LocationData.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\EdgegapApiBase.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerListResponse.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Delete.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\DeploymentPortsData.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\StaticSites.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionCreateSessionConfig.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentEnvsResponse.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SessionRequest.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppCreation.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Paginator.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Applications.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Pagination.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapBuildUtils.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\TotalMetricsModel.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseCreateBase.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\EdgegapAppApi.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapWindow.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionWhitelistResponse.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\SessionData.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SessionUser.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentEnvsCreate.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentUpdate.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\PortMapping.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Status.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Application.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\StaticSitesList.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\AppPortsData.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\CustomSessionModel.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapScriptEditor.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\ProtocolType.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentEnvListResponse.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\NetworkMetricsModel.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionPort.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionWhitelistEntry.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SessionDelete.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionEnv.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapWindowMetadata.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SelectorEnvModel.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\CustomBulkSessionsModel.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentListResponse.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\GetRegistryCredentialsResult.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\ContainerLogStorageModel.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentCreate.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\EdgegapIpApi.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Dependencies\HttpEncoder.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapWindowV2.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Sessions.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SessionUserContext.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\LocationModel.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MetricsResponse.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerResponse.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerUpdate.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Deployment.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionProbe.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\PatchSessionModel.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\ApiModelContainerlogs.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\ApiModelContainercrashdata.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MetricsResponse.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Requests\CreateAppVersionRequest.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Requests\CreateDeploymentRequest.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseConfigCreate.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionWhitelistEntrySuccess.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\ApplicationPost.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Dependencies\HttpUtility.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\DeployEnvModel.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentResponse.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\EdgegapErrorResult.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseResponseBase.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SessionModel.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapToolScript.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\EdgegapWizardApi.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseResponse.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerComponentEnvsUpdate.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\BaseModel.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\EdgegapDeploymentsApi.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapServerDataManager.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\GetDeploymentStatusResult.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Request.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\EdgegapHttpResult.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\ComponentCredentials.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\CustomSessionDeleteModel.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseCreate.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerManagedReleaseCreate.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersion.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionWhitelistEntryPayload.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionUpdate.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\GetCreateAppResult.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\AppVersionUpdateSessionConfig.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\DeploymentLocation.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\GetYourPublicIpResult.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Deployments.cs" />
      <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Error.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\DeploymentSessionContext.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerManagedReleaseUpdate.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\BulkSessionDelete.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Requests\UpdateAppVersionRequest.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Locations.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerCreate.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\MatchmakerReleaseConfigUpdate.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\ButtonShaker.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Editor\Api\Models\Results\CreateDeploymentResult.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\SelectorModel.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\CustomBulkSessionModel.cs" />
-     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\ApplicationPatch.cs" />
+     <Compile Include="Assets\Mirror\Hosting\Edgegap\Models\SDK\Deployments.cs" />
      <None Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapWindow.uss" />
      <None Include="Assets\Mirror\Hosting\Edgegap\Editor\Fonts\MIRROR CHANGE.txt" />
      <None Include="Assets\Mirror\Hosting\Edgegap\Editor\EdgegapServerData.uss" />
@@ -428,14 +428,26 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.26f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.CecilX.Rocks">
+        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX.Pdb">
+        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography">
+        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\BouncyCastle\BouncyCastle.Cryptography.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX">
+        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
@@ -457,18 +469,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX.Rocks">
-        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX.Pdb">
-        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
-    </Reference>
-    <Reference Include="BouncyCastle.Cryptography">
-        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\BouncyCastle\BouncyCastle.Cryptography.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX">
-        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
         <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>

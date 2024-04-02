@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{c59ab3c5-0729-97a7-0016-7c9022b00ffd}</ProjectGuid>
+    <ProjectGuid>{26e91e8c-1bd7-0d57-0cb5-457f3813a0c3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>kcp2k</AssemblyName>
@@ -36,25 +36,25 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\ErrorCode.cs" />
+     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\KcpServerConnection.cs" />
+     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\KcpConfig.cs" />
+     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\Extensions.cs" />
+     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\kcp\AssemblyInfo.cs" />
+     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\kcp\Kcp.cs" />
      <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\KcpServer.cs" />
      <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\KcpPeer.cs" />
      <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\KcpClient.cs" />
+     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\empty\KcpServerNonAlloc.cs" />
      <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\kcp\Pool.cs" />
-     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\KcpChannel.cs" />
      <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\KcpHeader.cs" />
      <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\KcpState.cs" />
-     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\ErrorCode.cs" />
      <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\Common.cs" />
-     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\KcpServerConnection.cs" />
      <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\kcp\AckItem.cs" />
-     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\KcpConfig.cs" />
-     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\empty\KcpServerNonAlloc.cs" />
-     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\Extensions.cs" />
-     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\kcp\Utils.cs" />
-     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\kcp\AssemblyInfo.cs" />
      <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\kcp\Segment.cs" />
+     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\KcpChannel.cs" />
+     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\kcp\Utils.cs" />
      <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\highlevel\Log.cs" />
-     <Compile Include="Assets\Mirror\Transports\KCP\kcp2k\kcp\Kcp.cs" />
      <None Include="Assets\Mirror\Transports\KCP\kcp2k\KCP.asmdef" />
      <None Include="Assets\Mirror\Transports\KCP\kcp2k\LICENSE.txt" />
      <None Include="Assets\Mirror\Transports\KCP\kcp2k\VERSION.txt" />
@@ -316,14 +316,26 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.26f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.CecilX.Rocks">
+        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX.Pdb">
+        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography">
+        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\BouncyCastle\BouncyCastle.Cryptography.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX">
+        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
@@ -345,18 +357,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX.Rocks">
-        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX.Pdb">
-        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
-    </Reference>
-    <Reference Include="BouncyCastle.Cryptography">
-        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\BouncyCastle\BouncyCastle.Cryptography.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX">
-        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
         <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
@@ -742,7 +742,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Mirror.csproj">
-      <Project>{cbdf8658-ebb6-1893-9ca5-c7a31840b21d}</Project>
+      <Project>{49fea88a-36b2-45d9-0611-e1486ac446c6}</Project>
       <Name>Mirror</Name>
     </ProjectReference>
   </ItemGroup>

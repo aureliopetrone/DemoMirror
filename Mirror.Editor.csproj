@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{48c285c1-5d23-8a00-6a61-27164f0d8473}</ProjectGuid>
+    <ProjectGuid>{4b7c5f65-a6e8-1333-bd81-1981bb51a00b}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Mirror.Editor</AssemblyName>
@@ -39,14 +39,14 @@
      <Compile Include="Assets\Mirror\Editor\ReadOnlyDrawer.cs" />
      <Compile Include="Assets\Mirror\Editor\SyncObjectCollectionsDrawer.cs" />
      <Compile Include="Assets\Mirror\Editor\SyncVarAttributeDrawer.cs" />
-     <Compile Include="Assets\Mirror\Editor\NetworkInformationPreview.cs" />
      <Compile Include="Assets\Mirror\Editor\Welcome.cs" />
+     <Compile Include="Assets\Mirror\Editor\AndroidManifestHelper.cs" />
+     <Compile Include="Assets\Mirror\Editor\NetworkInformationPreview.cs" />
+     <Compile Include="Assets\Mirror\Editor\EditorHelper.cs" />
      <Compile Include="Assets\Mirror\Editor\NetworkManagerEditor.cs" />
      <Compile Include="Assets\Mirror\Editor\NetworkBehaviourInspector.cs" />
-     <Compile Include="Assets\Mirror\Editor\EditorHelper.cs" />
      <Compile Include="Assets\Mirror\Editor\SceneDrawer.cs" />
      <Compile Include="Assets\Mirror\Editor\InspectorHelper.cs" />
-     <Compile Include="Assets\Mirror\Editor\AndroidManifestHelper.cs" />
      <Compile Include="Assets\Mirror\Editor\NetworkScenePostProcess.cs" />
      <None Include="Assets\Mirror\Editor\Mirror.Editor.asmdef" />
     <Reference Include="UnityEngine">
@@ -310,14 +310,26 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.26f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.CecilX.Rocks">
+        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX.Pdb">
+        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Cryptography">
+        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\BouncyCastle\BouncyCastle.Cryptography.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.collab-proxy@2.0.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX">
+        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
@@ -339,18 +351,6 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX.Rocks">
-        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX.Pdb">
-        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
-    </Reference>
-    <Reference Include="BouncyCastle.Cryptography">
-        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\BouncyCastle\BouncyCastle.Cryptography.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX">
-        <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
         <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
@@ -754,11 +754,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Mirror.csproj">
-      <Project>{cbdf8658-ebb6-1893-9ca5-c7a31840b21d}</Project>
+      <Project>{49fea88a-36b2-45d9-0611-e1486ac446c6}</Project>
       <Name>Mirror</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mirror.CodeGen.csproj">
-      <Project>{b38d2721-54e1-48f3-0496-2759420ad79f}</Project>
+      <Project>{63342ced-14f4-1239-19c2-f65767552d90}</Project>
       <Name>Unity.Mirror.CodeGen</Name>
     </ProjectReference>
   </ItemGroup>

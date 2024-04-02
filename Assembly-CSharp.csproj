@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{04a48a61-03c3-6adc-aa05-b45f03d8038b}</ProjectGuid>
+    <ProjectGuid>{2233f7a9-07aa-9394-9297-79c10ad81453}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -290,15 +290,6 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.26f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="ReportGeneratorMerged">
-        <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.testtools.codecoverage@1.2.3\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.CecilX.Rocks">
         <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
@@ -310,6 +301,15 @@
     </Reference>
     <Reference Include="Mono.CecilX">
         <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+        <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportGeneratorMerged">
+        <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.testtools.codecoverage@1.2.3\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>C:\Users\Au\DemoMirror\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.2.1\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
         <HintPath>C:\Users\Au\DemoMirror\Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
@@ -692,9 +692,6 @@
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
         <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -706,9 +703,6 @@
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
         <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -740,14 +734,8 @@
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-        <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.State">
-        <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
         <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
@@ -755,58 +743,70 @@
     <Reference Include="Unity.EditorCoroutines.Editor">
         <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+        <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+        <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TestTools.CodeCoverage.Editor">
+        <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+        <HintPath>C:\Users\Au\DemoMirror\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="ParrelSync.csproj">
-      <Project>{35daff75-84f9-9497-abf0-a2df743aa3bb}</Project>
-      <Name>ParrelSync</Name>
-    </ProjectReference>
-    <ProjectReference Include="Telepathy.csproj">
-      <Project>{a9008bad-39dd-860c-86c1-b11e822f6257}</Project>
-      <Name>Telepathy</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Hosting.csproj">
-      <Project>{38568cba-cc8d-33dd-3d7a-3fad6296a179}</Project>
-      <Name>Mirror.Hosting</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Components.csproj">
-      <Project>{e248a0c2-2c0b-42e5-91a4-1559d83e33c5}</Project>
-      <Name>Mirror.Components</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Examples.csproj">
-      <Project>{3cae8f23-a04d-8931-8f11-c1134d080d50}</Project>
-      <Name>Mirror.Examples</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Transports.csproj">
-      <Project>{190424af-bffd-fa04-ab9f-2fe22acd6b17}</Project>
-      <Name>Mirror.Transports</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.CompilerSymbols.csproj">
-      <Project>{78916735-62a3-a451-b982-1ce8af60acb8}</Project>
-      <Name>Mirror.CompilerSymbols</Name>
-    </ProjectReference>
     <ProjectReference Include="Mirror.csproj">
-      <Project>{cbdf8658-ebb6-1893-9ca5-c7a31840b21d}</Project>
+      <Project>{49fea88a-36b2-45d9-0611-e1486ac446c6}</Project>
       <Name>Mirror</Name>
     </ProjectReference>
     <ProjectReference Include="kcp2k.csproj">
-      <Project>{c59ab3c5-0729-97a7-0016-7c9022b00ffd}</Project>
+      <Project>{26e91e8c-1bd7-0d57-0cb5-457f3813a0c3}</Project>
       <Name>kcp2k</Name>
     </ProjectReference>
+    <ProjectReference Include="Mirror.Hosting.csproj">
+      <Project>{7fa2920d-b087-67ca-e573-1c751c5b3ef4}</Project>
+      <Name>Mirror.Hosting</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Examples.csproj">
+      <Project>{5d3c4dc4-54c9-e753-250a-b848d95538ca}</Project>
+      <Name>Mirror.Examples</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Transports.csproj">
+      <Project>{806769a9-be49-c30b-b90d-3c491c7cf65b}</Project>
+      <Name>Mirror.Transports</Name>
+    </ProjectReference>
+    <ProjectReference Include="ParrelSync.csproj">
+      <Project>{e378eaec-6b57-9ef0-591a-f1f52a2ab63a}</Project>
+      <Name>ParrelSync</Name>
+    </ProjectReference>
     <ProjectReference Include="Mirror.Editor.csproj">
-      <Project>{48c285c1-5d23-8a00-6a61-27164f0d8473}</Project>
+      <Project>{4b7c5f65-a6e8-1333-bd81-1981bb51a00b}</Project>
       <Name>Mirror.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Mirror.CompilerSymbols.csproj">
+      <Project>{ac240683-c441-5e80-a424-3b8589d65a83}</Project>
+      <Name>Mirror.CompilerSymbols</Name>
+    </ProjectReference>
     <ProjectReference Include="Mirror.Authenticators.csproj">
-      <Project>{f5c8a309-444e-6c98-a12d-49659ba9adca}</Project>
+      <Project>{7e849cfa-bd91-5b59-9647-c24e93bb55ef}</Project>
       <Name>Mirror.Authenticators</Name>
     </ProjectReference>
+    <ProjectReference Include="Telepathy.csproj">
+      <Project>{9b98c042-c800-5f3f-8aad-bfaeee52739b}</Project>
+      <Name>Telepathy</Name>
+    </ProjectReference>
     <ProjectReference Include="SimpleWebTransport.csproj">
-      <Project>{a1fc0158-5717-3594-8698-73bb89fa8368}</Project>
+      <Project>{ce4d039f-20eb-2576-4d35-d569498ebd1b}</Project>
       <Name>SimpleWebTransport</Name>
     </ProjectReference>
+    <ProjectReference Include="Mirror.Components.csproj">
+      <Project>{88825400-c4db-5078-c35b-6ea4127767aa}</Project>
+      <Name>Mirror.Components</Name>
+    </ProjectReference>
     <ProjectReference Include="EncryptionTransportEditor.csproj">
-      <Project>{4b82561d-7572-9faa-b9b3-ddefdbd7bc13}</Project>
+      <Project>{d07a1638-196d-edc5-6ef6-751efd7d6df2}</Project>
       <Name>EncryptionTransportEditor</Name>
     </ProjectReference>
   </ItemGroup>
