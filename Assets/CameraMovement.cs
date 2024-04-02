@@ -17,6 +17,11 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(tank == null)
+        {
+            return;
+        }
+        
         // Get the tank position
         UnityEngine.Vector3 tankPosition = tank.transform.position;
         // Get the tank rotation

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Mirror;
 
-public class TankControls : MonoBehaviour
+public class TankControls : NetworkBehaviour
 {
     // Colliders
     public WheelCollider leftFrontWheelCollider;
@@ -126,6 +127,11 @@ public class TankControls : MonoBehaviour
 
     private void getInputs()
     {
+        if(isLocalPlayer == false)
+        {
+            return;
+        }
+        
         leftTracksInput = Input.GetKey(KeyCode.A) ? 1 : 0;
         rightTracksInput = Input.GetKey(KeyCode.D) ? 1 : 0;
         leftTracksInputBack = Input.GetKey(KeyCode.Z) ? 1 : 0;
