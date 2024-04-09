@@ -71,7 +71,8 @@ namespace DemoMirror
         [ClientRpc]
         private void RpcStartRound()
         {
-            //InputManager.Remove(ActionMapNames.Player);
+            Debug.Log("Start Round");
+            InputManager.Remove(ActionMapNames.Player);
         }
 
         #endregion

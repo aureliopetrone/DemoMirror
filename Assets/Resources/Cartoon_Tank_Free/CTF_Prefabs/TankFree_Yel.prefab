@@ -158,7 +158,6 @@ GameObject:
   - component: {fileID: 7218384379233196417}
   - component: {fileID: 7012982170077184705}
   - component: {fileID: 8470014484151066215}
-  - component: {fileID: 2879197455556142245}
   m_Layer: 0
   m_Name: TankFree_Yel
   m_TagString: Untagged
@@ -263,24 +262,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2879197455556142245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013459266845585946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ce37c038cb8e25459206a0e3ae32cf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftTracks:
-  - {fileID: 8002240668828950018}
-  - {fileID: 1001277622686073425}
-  rightTracks:
-  - {fileID: 6357965515730733927}
-  - {fileID: 1889356692400491787}
 --- !u!1 &1038761712893301047
 GameObject:
   m_ObjectHideFlags: 0

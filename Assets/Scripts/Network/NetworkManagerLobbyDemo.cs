@@ -9,7 +9,7 @@ namespace DemoMirror
 {
     public class NetworkManagerLobbyDemo : NetworkManager
     {
-        [SerializeField] private int minPlayers = 2;
+        [SerializeField] private int minPlayers = 1;
         [Scene][SerializeField] private string menuScene = string.Empty;
         [Scene][SerializeField] private string gameScene = string.Empty;
 
@@ -17,6 +17,8 @@ namespace DemoMirror
         [SerializeField] private NetworkRoomPlayerLobbyDemo roomPlayerPrefab = null;
         [Header("Game")]
         [SerializeField] private NetworkGamePlayerLobbyDemo gamePlayerPrefab = null;
+        [SerializeField] private GameObject playerSpawnSystem = null;
+        [SerializeField] private GameObject roundSystem = null;
 
         public static event Action OnClientConnected;
         public static event Action OnClientDisconnected;
@@ -81,9 +83,12 @@ namespace DemoMirror
 
         public override void OnStopServer()
         {
+
+            OnServerStopped?.Invoke();
+
             RoomPlayers.Clear();
             GamePlayers.Clear();
-            OnServerStopped?.Invoke();
+            
         }
 
         public void NotifyPlayersOfReadyState()
@@ -96,6 +101,11 @@ namespace DemoMirror
 
         private bool IsReadyToStart()
         {
+            Debug.Log("Called IsReadyToStart with:");
+            Debug.Log("numPlayers: " + numPlayers);
+            Debug.Log("minPlayers: " + minPlayers);
+            Debug.Log("RoomPlayers.Count: " + RoomPlayers.Count);
+
             if (numPlayers < minPlayers) { return false; }
 
             foreach (var player in RoomPlayers)
@@ -139,9 +149,19 @@ namespace DemoMirror
         {
             if (sceneName.StartsWith("Assets/Scenes/"))
             {
-                GameObject playerSpawnSystemInstance = Instantiate(spawnPrefabs.Find(prefab => prefab.name == "PlayerSpawnSystem"));
+                GameObject playerSpawnSystemInstance = Instantiate(spawnPrefabs.Find(prefab => prefab.name == "SpawnSystem"));
                 NetworkServer.Spawn(playerSpawnSystemInstance);
+
+                GameObject roundSystemInstance = Instantiate(spawnPrefabs.Find(prefab => prefab.name == "RoundSystem"));
+                NetworkServer.Spawn(roundSystemInstance);
             }
+        }
+
+        public override void OnServerReady(NetworkConnectionToClient conn)
+        {
+            base.OnServerReady(conn);
+
+            OnServerReadied?.Invoke(conn);
         }
     }
 }

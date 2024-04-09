@@ -42,4 +42,9 @@ public class CameraMovement : MonoBehaviour
         transform.Rotate(new UnityEngine.Vector3(-30, 0, 0));
         
     }
+
+    public void SetTank(GameObject tank)
+    {
+        this.tank = tank;
+    }
 }
