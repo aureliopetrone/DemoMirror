@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebTransport", "Simpl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Examples", "Mirror.Examples.csproj", "{5d3c4dc4-54c9-e753-250a-b848d95538ca}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{2233f7a9-07aa-9394-9297-79c10ad81453}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror", "Mirror.csproj", "{49fea88a-36b2-45d9-0611-e1486ac446c6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Components", "Mirror.Components.csproj", "{88825400-c4db-5078-c35b-6ea4127767aa}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{2233f7a9-07aa-9394-9297-79c10ad81453}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telepathy", "Telepathy.csproj", "{9b98c042-c800-5f3f-8aad-bfaeee52739b}"
 EndProject
@@ -42,12 +42,12 @@ Global
 		{ce4d039f-20eb-2576-4d35-d569498ebd1b}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5d3c4dc4-54c9-e753-250a-b848d95538ca}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5d3c4dc4-54c9-e753-250a-b848d95538ca}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2233f7a9-07aa-9394-9297-79c10ad81453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2233f7a9-07aa-9394-9297-79c10ad81453}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49fea88a-36b2-45d9-0611-e1486ac446c6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{49fea88a-36b2-45d9-0611-e1486ac446c6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88825400-c4db-5078-c35b-6ea4127767aa}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{88825400-c4db-5078-c35b-6ea4127767aa}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2233f7a9-07aa-9394-9297-79c10ad81453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2233f7a9-07aa-9394-9297-79c10ad81453}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9b98c042-c800-5f3f-8aad-bfaeee52739b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9b98c042-c800-5f3f-8aad-bfaeee52739b}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26e91e8c-1bd7-0d57-0cb5-457f3813a0c3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

@@ -473,6 +473,7 @@ MonoBehaviour:
   minPlayers: 1
   menuScene: Assets/Scenes/Root.unity
   gameScene: Assets/Scenes/Main.unity
+  portlaScene: Assets/Scenes/Portal.unity
   roomPlayerPrefab: {fileID: 1378269302975843083, guid: e93532b07ecdb2345993a650334b28d3, type: 3}
   gamePlayerPrefab: {fileID: 7604992931040433428, guid: c76704549c249994fb0257f26346f379, type: 3}
   playerSpawnSystem: {fileID: 6120671344560767730, guid: edb7f4169385da14997165b7726f6b99, type: 3}

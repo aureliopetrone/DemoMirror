@@ -22,21 +22,30 @@ public class TankController : MonoBehaviour
     public GameObject turretMesh;
 
     // Settings
-    private float wheelRotationForce = 500.0f;
-    private float wheelForwardFrictionStiffness = 0.9f;
-    private float wheelForwardFrictionExtremumSlip = 0.4f;
-    private float wheelForwardFrictionExtremumValue = 0.9f;
-    private float wheelForwardFrictionAsymptoteSlip = 0.65f;
-    private float wheelForwardFrictionAsymptoteValue = 0.7f;
-    private float wheelSidewaysFrictionStiffness = 0.3f;
-    private float wheelSidewaysFrictionExtremumSlip = 0.9f;
-    private float wheelSidewaysFrictionExtremumValue = 0.7f;
-    private float wheelSidewaysFrictionAsymptoteSlip = 0.4f;
-    private float wheelSidewaysFrictionAsymptoteValue = 0.34f;
-    private float wheelMass = 50.0f;
-    private float wheelRadius = 0.45f;
+    public float wheelRotationForce = 500.0f;
+    public float wheelForwardFrictionStiffness = 0.9f;
+    public float wheelForwardFrictionExtremumSlip = 0.4f;
+    public float wheelForwardFrictionExtremumValue = 0.9f;
+    public float wheelForwardFrictionAsymptoteSlip = 0.65f;
+    public float wheelForwardFrictionAsymptoteValue = 0.7f;
+    public float wheelSidewaysFrictionStiffness = 0.3f;
+    public float wheelSidewaysFrictionExtremumSlip = 0.9f;
+    public float wheelSidewaysFrictionExtremumValue = 0.7f;
+    public float wheelSidewaysFrictionAsymptoteSlip = 0.4f;
+    public float wheelSidewaysFrictionAsymptoteValue = 0.34f;
+    public float wheelMass = 50.0f;
+    public float wheelRadius = 0.45f;
 
     void Start()
+    {
+        SetupWheel(leftBackWheelCollider);
+        SetupWheel(rightBackWheelCollider);
+        SetupWheel(leftFrontWheelCollider);
+        SetupWheel(rightFrontWheelCollider);
+    }
+
+    [ContextMenu("Update Wheels Properties", false, 0)]
+    void UpdateWheelsProperties()
     {
         SetupWheel(leftBackWheelCollider);
         SetupWheel(rightBackWheelCollider);
@@ -157,8 +166,8 @@ public class TankController : MonoBehaviour
 
         wheel.forwardFriction = forwardFrictionCurve;
         wheel.sidewaysFriction = frictionCurve;
-        wheel.mass = 50;
-        wheel.radius = 0.45f;
+        wheel.mass = wheelMass;
+        wheel.radius = wheelRadius;
         wheel.suspensionDistance = 0.3f;
         wheel.wheelDampingRate = 50f;
     }

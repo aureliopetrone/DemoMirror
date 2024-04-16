@@ -36,14 +36,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CombatSystem.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\BulletBehaviour.cs" />
      <Compile Include="Assets\Scripts\PlayerMovementController.cs" />
      <Compile Include="Assets\Scripts\TankController.cs" />
+     <Compile Include="Assets\Scripts\InputManager.cs" />
      <Compile Include="Assets\Scripts\PlayerCameraController.cs" />
      <Compile Include="Assets\Scripts\PlayerNameInput.cs" />
      <Compile Include="Assets\Scripts\ActionMapNames.cs" />
      <Compile Include="Assets\Scripts\PlayerSpawnSystem.cs" />
+     <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\PlayerSpawnPoint.cs" />
      <Compile Include="Assets\Scripts\Menu\JoinMenu.cs" />
      <Compile Include="Assets\Scripts\Menu\MapSet.cs" />
@@ -54,8 +57,7 @@
      <Compile Include="Assets\Scripts\Network\NetworkGamePlayerLobbyDemo.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\Network\NetworkManagerLobbyDemo.cs" />
-     <Compile Include="Assets\Scripts\InputManager.cs" />
-     <Compile Include="Assets\Scripts\Health.cs" />
+     <Compile Include="Assets\Portal.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

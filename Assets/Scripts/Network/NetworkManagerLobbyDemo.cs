@@ -12,6 +12,7 @@ namespace DemoMirror
         [SerializeField] private int minPlayers = 1;
         [Scene][SerializeField] private string menuScene = string.Empty;
         [Scene][SerializeField] private string gameScene = string.Empty;
+        [Scene][SerializeField] private string portlaScene = string.Empty;
 
         [Header("Room")]
         [SerializeField] private NetworkRoomPlayerLobbyDemo roomPlayerPrefab = null;
@@ -88,7 +89,7 @@ namespace DemoMirror
 
             RoomPlayers.Clear();
             GamePlayers.Clear();
-            
+
         }
 
         public void NotifyPlayersOfReadyState()
@@ -163,5 +164,15 @@ namespace DemoMirror
 
             OnServerReadied?.Invoke(conn);
         }
+
+        // Load the portal scene only for the client who requested it
+        public void LoadPortalScene()
+        {
+            
+                SceneManager.LoadScene(portlaScene, LoadSceneMode.Additive);
+                
+            
+        }
+        
     }
 }

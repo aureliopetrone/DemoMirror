@@ -10,12 +10,6 @@ namespace DemoMirror
         [SerializeField] private float movementSpeed = 5f;
         [SerializeField] private TankController controller = null;
 
-        [ClientCallback]
-        private void OnEnable() => InputManager.Controls.Enable();
-
-        [ClientCallback]
-        private void OnDisable() => InputManager.Controls.Disable();
-
         private Vector2 previousInput;
 
         public override void OnStartAuthority()
@@ -38,7 +32,6 @@ namespace DemoMirror
         [Client]
         private void Move()
         {
-            Debug.Log("Previous Input: " + previousInput);
             controller.MoveForward(previousInput.y);
 
             if(previousInput.x != 0)

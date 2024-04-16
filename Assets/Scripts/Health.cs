@@ -31,6 +31,7 @@ namespace DemoMirror
         [Command]
         public void CmdDealDamage(int damage)
         {
+            Debug.Log("CmdDealDamage");
             if (isDead) { return; }
 
             health = Mathf.Max(health - damage, 0);
@@ -45,17 +46,8 @@ namespace DemoMirror
         private void HandleHealthUpdated(int oldHealth, int newHealth)
         {
             // update UI or whatever
+            Debug.Log("HandleHealthUpdated");
             healthText.text = newHealth.ToString();
-        }
-
-        private void Update()
-        {
-            if (!isOwned) { return; }
-
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                CmdDealDamage(10);
-            }
         }
 
         public override void OnStartAuthority()
